@@ -1,16 +1,42 @@
-<!ELEMENT Film (Critique*,Motcle*,Genre*,Langage*, Projection*, Role*)>
-<!ELEMENT Salle (Projection*)>
-<!ELEMENT Motcle>
-<!ELEMENT Genre>
-<!ELEMENT Langage>
+<!ELEMENT Film (Critique*,Motcle*,Genre*,Langage*, Projection*, Role*,titre,synopsis?, duree, photo)>
+<!ELEMENT Salle (Projection*, numero, taille)>
+<!ELEMENT Motcle (label?)>
+<!ELEMENT Genre (label?)>
+<!ELEMENT Langage (label?)>
 <!ELEMENT Projection (Film, Salle, Date)>
-<!ELEMENT Critique>
-<!ELEMENT Role (Acteur, Film)>
-<!ELEMENT Acteur (Role*)>
-<!ELEMENT Date(#PCDATA)>
+<!ELEMENT Critique (texte)>
+<!ELEMENT Role (Acteur, Film, personnage, place)>
+<!ELEMENT Acteur (Role*, nom, nomNaissance?, biographie?, dateNaissance, dateDeces?)>
+<!ELEMENT Date (jour,mois,annee)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT taille (#PCDATA)>
+<!ELEMENT label (#PCDATA)>
+<!ELEMENT jour (#PCDATA)>
+<!ELEMENT mois (#PCDATA)>
+<!ELEMENT annee (#PCDATA)>
+<!ELEMENT texte (#PCDATA)>
+<!ELEMENT personnage (#PCDATA)>
+<!ELEMENT place (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT nomNaissance (#PCDATA)>
+<!ELEMENT biographie (#PCDATA)>
+<!ELEMENT dateNaissance (#PCDATA)>
+<!ELEMENT dateDeces (#PCDATA)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT synopsis (#PCDATA)>
+<!ELEMENT duree (#PCDATA)>
+<!ELEMENT photo (EMPTY)>
 
+<!ATTLIST Film Id ID #REQUIRED>
 <!ATTLIST Salle Id ID #REQUIRED>
-<!ATTLIST Film Id_WFC ID #REQUIRED>
+<!ATTLIST Motcle Id ID #REQUIRED>
+<!ATTLIST Genre Id ID #REQUIRED>
+<!ATTLIST Langage Id ID #REQUIRED>
 <!ATTLIST Projection Id ID #REQUIRED>
-<!ATTLIST Critique Identifiant ID #REQUIRED>
+<!ATTLIST Critique Id ID #REQUIRED>
+<!ATTLIST Role Id ID #REQUIRED>
+<!ATTLIST Acteur Id ID #REQUIRED>
+
 <!ATTLIST Acteur sexe ("Masculin" | "Feminin" | "Inconnu") #REQUIRED>
+<!ATTLIST Critique note ("1" | "2" | "3" | "4" | "5") #REQUIRED>
+<!ATTLIST photo url CDATA #REQUIRED>
