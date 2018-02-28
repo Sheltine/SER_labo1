@@ -27,15 +27,15 @@
 <!ELEMENT duree (#PCDATA)>
 <!ELEMENT photo (EMPTY)>
 
-<!ATTLIST Film Id_film ID #REQUIRED>
+<!ATTLIST Film Id_film IDREF #REQUIRED>
 <!ATTLIST Salle Id_salle ID #REQUIRED>
-<!ATTLIST Motcle Id_motcle ID #REQUIRED>
-<!ATTLIST Genre Id_genre ID #REQUIRED>
-<!ATTLIST Langage Id_langage ID #REQUIRED>
+<!ATTLIST Motcle Id_motcle IDREF #REQUIRED>
+<!ATTLIST Genre Id_genre IDREF #REQUIRED>
+<!ATTLIST Langage Id_langage IDREF #REQUIRED>
 <!ATTLIST Projection Id_proj ID #REQUIRED>
 <!ATTLIST Critique Id_critique ID #REQUIRED>
 <!ATTLIST Role Id_role ID #REQUIRED>
-<!ATTLIST Acteur Id_acteur ID #REQUIRED>
+<!ATTLIST Acteur Id_acteur IDREF #REQUIRED>
 
 <!ATTLIST Acteur sexe ("Masculin" | "Feminin" | "Inconnu") #REQUIRED>
 <!ATTLIST Critique note ("1" | "2" | "3" | "4" | "5") #REQUIRED>
