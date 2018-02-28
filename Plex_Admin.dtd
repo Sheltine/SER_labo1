@@ -1,0 +1,11 @@
+<!ELEMENT Film (Critique*,Motcle*,Genre*,Langage*,Salle*,Acteur*)>
+<!ELEMENT Salle >
+<!ELEMENT Motcle>
+<!ELEMENT Genre>
+<!ELEMENT Langage>
+<!ELEMENT Projection>
+<!ELEMENT Critique>
+<!ELEMENT Role>
+<!ELEMENT Acteur>
+
+<!ATTLIST Acteur sexe("Masculin" | "Feminin" | "Inconnu")>
