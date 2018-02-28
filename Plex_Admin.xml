@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE Film SYSTEM "Plex_Admin.dtd">
+
+<Film Id_film="1">
+	<titre>Spider-Man</titre>
+	<synopsis>Un homme se fait piquer par une araignée et peut soudain créer des toiles et il embrasse une femme à l'envers et il va la voir au théâtre</synopsis>
+	<Genre Id_genre="1">Action</Genre>
+	<Critique Id_critique="1">
+		<texte>Ce film est génial, wow</texte>
+	</Critique>
+	<Langage Id_langage="1">Anglais</Langage>
+	<photo url="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fimg15.deviantart.net%2Fdffa%2Fi%2F2015%2F201%2F1%2F8%2Fspoderman_full_body_by_hyposnoke-d925app.png&f=1"/>
+</Film>
