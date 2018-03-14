@@ -1,0 +1,34 @@
+{
+  "projections" :
+          [
+
+            {
+              "id" : 1,
+              "dateHeure" : "29.02.10 19:30",
+              "film" :
+              {
+                "Titre" : "Spoder-Man",
+                "Acteurs" : {
+                  "Role1" : "Toby McGuire",
+                  "Role2" : "Kristen Dust"
+                }
+              }
+
+            },
+            {
+              "id" : 2,
+              "dateHeure" : "27.04.18 18:00",
+              "film" :
+              {
+                "Titre" : "Retour vers les grosses basses",
+                "Acteurs" : {
+                  "Role1" : "Benoîte Jackman",
+                  "Role2" : "Maxence Caillou"
+                }
+              }
+
+            }
+            ]
+  }
+
+
