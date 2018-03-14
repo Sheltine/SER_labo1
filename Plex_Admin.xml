@@ -1,44 +1,107 @@
 <?xml version="1.0"?>
-<!DOCTYPE Film SYSTEM "Plex_Admin.dtd">
+<!DOCTYPE Projections SYSTEM "Plex_Admin.dtd">
+<Projections>
+    <Projection Id="projection1">
+        <Salle Id="salle1">
+            <numero>15</numero>
+            <taille>150</taille>
+        </Salle>
+        <Date>
+            <jour>29</jour>
+            <mois>02</mois>
+            <annee>2010</annee>
+        </Date>
+        <Film Id="film1">
+            <titre>Spoder-Man</titre>
+            <duree>150</duree>
+            <photo url="http://i.ytimg.com/vi/FlY4eJZKG6Q/maxresdefault.jpg"/>
+            <Role Id="role1">
+                <personnage>Spoder-Man</personnage>
+                <place>1</place>
+                <Acteur Id="acteur1">
+                    <nom>Toby McGuire</nom>
+                    <dateNaissance>25.07.75</dateNaissance>
+                </Acteur>
+            </Role>
+            <Role Id="role2">
+                <Acteur Id="acteur2">
+                    <nom>Kristen Dust</nom>
+                    <dateNaissance>31.10.66</dateNaissance>
+                    <dateDeces>04.05.17</dateDeces>
+                </Acteur>
+                <personnage>Marijane</personnage>
+                <place>2</place>
+            </Role>
+            <Motcle Id="motclé1">
+                <label>araignée</label>
+                <label>DC Comics</label>
+            </Motcle>
+            <Langage Id="langage1">
+                <label>Anglais</label>
+                <label>Frabçais</label>
+            </Langage>
+            <Critique Id="critique1" note="5">
+                <texte>"Ce film est génial, wow</texte>
+            </Critique>
+            <synopsis>Un homme se fait piquer par une araignée et se retrouve complètement déformé.</synopsis>
+            <Genre Id="genre1">Tragédie</Genre>
+            <Genre Id="genre2">Super-héros</Genre>
+        </Film>
+    </Projection>
+    <Projection Id="projection2">
+        <Salle Id="salle2">
+            <numero>56</numero>
+            <taille>200</taille>
+        </Salle>
+        <Date>
+            <jour>15</jour>
+            <mois>03</mois>
+            <annee>2017</annee>
+        </Date>
+        <Film Id="film2">
+            <titre>Retour vers les basses</titre>
+            <duree>300</duree>
+            <photo url="https://baleinev.ch/sites/all/themes/bootstrap-business/images/benevole.jpg"/>
+            <Role Id="role3">
+                <personnage>Président</personnage>
+                <place>1</place>
+                <Acteur Id="acteur3">
+                    <nom>Benoîte Jackman</nom>
+                    <biographie>Aime le cake</biographie>
+                    <dateNaissance>04.01.93</dateNaissance>
+                </Acteur>
+            </Role>
+            <Role Id="role4">
+                <Acteur Id="acteur4">
+                    <nom>Maxence Caillou</nom>
+                    <dateNaissance>07.09.92</dateNaissance>
+                </Acteur>
+                <personnage>Président2</personnage>
+                <place>2</place>
+            </Role>
+            <Role Id="role5">
+                <Acteur Id="acteur5">
+                    <nom>Noé Barman</nom>
+                    <dateNaissance>01.04.93</dateNaissance>
+                    <nomNaissance>Maurice</nomNaissance>
+                </Acteur>
+                <personnage>Vice-prez</personnage>
+                <place>3</place>
+            </Role>
+            <Motcle Id="motclé2">
+                <label>lourd</label>
+                <label>son</label>
+            </Motcle>
+            <Langage Id="langage2">
+                <label>Français</label>
+            </Langage>
+            <Critique Id="critique2" note="5">
+                <texte>"Ce festival est génial, wow</texte>
+            </Critique>
+            <synopsis>Un groupe d'irréductibles étudiants transforment leur campus en un festival incroyable.</synopsis>
+            <Genre Id="genre3">Comédie musicale</Genre>
+        </Film>
+    </Projection>
+</Projections>
 
-<Film Id="spiderman1">
-	<titre>
-		Spider-Man
-	</titre>
-	<synopsis>
-		Un homme se fait piquer par une araignée et peut soudain créer des toiles et il embrasse une femme à l'envers et il va la voir au théâtre
-	</synopsis>
-	<Genre Id="action">
-		Action
-	</Genre>
-	<Critique Id="critique1" note="5">
-		<texte>
-			Ce film est génial, wow
-		</texte>
-	</Critique>
-	<Langage Id="anglais">
-		Anglais
-	</Langage>
-	<photo url="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fimg15.deviantart.net%2Fdffa%2Fi%2F2015%2F201%2F1%2F8%2Fspoderman_full_body_by_hyposnoke-d925app.png&f=1"/>
-	<duree>
-		90
-	</duree>
-	<Motcle Id="stylé">
-		<label>
-			Stylé
-		</label>
-	</Motcle>
-	<Role Id="1er Role">
-		<Acteur Id="">
-			<nom></nom>
-			<dateNaissance></dateNaissance>
-		</Acteur>
-		<Film Id="">
-			<titre></titre>
-			<duree></duree>
-			<photo url=""></photo>
-		</Film>
-		<personnage></personnage>
-		<place></place>
-	</Role>
-</Film>
+
